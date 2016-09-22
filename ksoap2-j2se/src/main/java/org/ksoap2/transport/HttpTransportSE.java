@@ -152,8 +152,8 @@ public class HttpTransportSE extends Transport {
         responseDump = null;
 
         ServiceConnection connection = getServiceConnection();
-
-        connection.setRequestProperty("User-Agent", USER_AGENT);
+//      removed, because ilias.fh-dortmund.de sends a 403 response code with that User-Agent
+//       connection.setRequestProperty("User-Agent", USER_AGENT);
         // SOAPAction is not a valid header for VER12 so do not add
         // it
         // @see "http://code.google.com/p/ksoap2-android/issues/detail?id=67
